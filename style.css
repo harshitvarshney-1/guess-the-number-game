@@ -3,20 +3,21 @@
   margin: 0px;
   box-sizing: border-box;
 }
-body{
-    height: 100vh;
-    width: 100vw;
+
+body {
+  height: 100vh;
+  width: 100vw;
 }
+
 .container {
-    height: 100%;
-    width:100%;
-    /* background-color: rgba(255, 180, 50, 1); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(https://wallpapers.com/images/hd/educated-mathematician-gtliyadi5xejdoyb.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://wallpapers.com/images/hd/educated-mathematician-gtliyadi5xejdoyb.jpg);
+  background-repeat: no-repeat;
+ 	background-size: cover;
 }
 
 .box {
@@ -74,6 +75,60 @@ p {
   margin-bottom: 15px;
 }
 
-span{
-    color: black;
+span {
+  color: black;
+}
+
+
+/* 📱 Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .box {
+    width: 90%;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  #input-field {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  #submit-btn, #repeat-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .result, .chances-left {
+    font-size: 16px;
+  }
+}
+
+/* 📱 Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .box {
+    width: 70%;
+    padding: 18px;
+  }
+}
+
+/* 🖥️ Large Screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .box {
+    width: 30%;
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
 }
